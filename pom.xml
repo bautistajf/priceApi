@@ -18,10 +18,7 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <mapstruct.version>1.2.0.Final</mapstruct.version>
         <springdoc-openapi-ui.version>1.6.5</springdoc-openapi-ui.version>
-        <jacoco.version>0.8.5</jacoco.version>
-
     </properties>
 
     <dependencies>
@@ -60,7 +57,8 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <optional>true</optional>
+            <version>1.18.22</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -79,22 +77,17 @@
         </dependency>
         <dependency>
             <groupId>org.mapstruct</groupId>
-            <artifactId>mapstruct-jdk8</artifactId>
-            <version>${mapstruct.version}</version>
+            <artifactId>mapstruct</artifactId>
+            <version>1.4.2.Final</version>
         </dependency>
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct-processor</artifactId>
-            <version>${mapstruct.version}</version>
+            <version>1.4.2.Final</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt</artifactId>
-            <version>0.9.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -121,7 +114,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>${jacoco.version}</version>
+                <version>0.8.5</version>
                 <executions>
                     <execution>
                         <goals>

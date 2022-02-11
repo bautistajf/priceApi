@@ -55,6 +55,8 @@ Desarrollar unos test al endpoint rest que validen las siguientes peticiones al 
 -          Test 4: petición a las 10:00 del día 15 del producto 35455   para la brand 1 (ZARA)
 -          Test 5: petición a las 21:00 del día 16 del producto 35455   para la brand 1 (ZARA)
 
+La aplicacion esta compilada con java11
+
 ## Swagger
 
 ```
@@ -81,14 +83,7 @@ mvn clean package sonar:sonar
 mvn clean package test
 ```
 
-## Docker compose
 
-```
-docker-compose build 
-docker-compose up -d
-```
-
-## Client
 
 
 
